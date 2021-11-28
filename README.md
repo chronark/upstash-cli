@@ -2,8 +2,18 @@
 
 ## Installation
 
-1. Download a binary from
 
+### From release binary
+
+
+
+### From source
+```bash
+go install github.com/chronark/upstash-cli@latest
+
+
+upstash-cli redis ...
+```
 ## Using
 
 ### Authenticating
