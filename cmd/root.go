@@ -17,10 +17,10 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/chronark/upstash-cli/pkg/version"
 	"github.com/spf13/cobra"
-	"os"
-
 	"github.com/spf13/viper"
+	"os"
 )
 
 var cfgFile string
@@ -30,6 +30,8 @@ var rootCmd = &cobra.Command{
 	Use:   "upstash-cli",
 	Short: "Manage upstash resources",
 	Long:  `Manage serverless redis and kafka instances on the upstash platform`,
+	//go:generate bash ./get_version_linux.sh
+	Version: version.Version,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -46,6 +48,7 @@ func init() {
 	// will be global for your application.
 
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.upstash-cli.json)")
+
 }
 
 // initConfig reads in config file and ENV variables if set.
