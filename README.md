@@ -2,19 +2,9 @@
 
 ## Installation
 
+`upstash` is available via the [release page](https://github.com/chronark/upstash-cli/releases/latest)
 
-### From release binary
-
-
-
-### From source
-```bash
-go install github.com/chronark/upstash-cli@latest
-
-
-upstash-cli redis ...
-```
-## Using
+## Get Started
 
 ### Authenticating
 
@@ -32,7 +22,7 @@ upstash auth --email=YOUR_EMAIL --key=YOUR_API_KEY
 ### Creating a database
 
 ```bash
-upstash redis create DATABASE_NAME --region="us-easy-1"
+upstash redis create DATABASE_NAME --region="us-east-1"
 ```
 
 See `upstash redis create --help` for more options
