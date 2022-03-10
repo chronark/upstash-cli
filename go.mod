@@ -3,7 +3,7 @@ module github.com/chronark/upstash-cli
 go 1.17
 
 require (
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.10.0
 	github.com/upstash/terraform-provider-upstash v0.0.1
 )
