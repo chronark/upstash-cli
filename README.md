@@ -1,5 +1,9 @@
 # upstash-cli
 
+# DEPRECATED
+Please use [https://github.com/upstash/cli](https://github.com/upstash/cli) instead.
+
+
 ## Installation
 
 `upstash` is available via the [release page](https://github.com/chronark/upstash-cli/releases/latest)
